@@ -15,9 +15,20 @@ def sum_a2(n):
     return n * (n + 1) // 2
 
 
+# 재귀 호출
+def rec_sum(n):
+    if n == 1:
+        return 1
+    else:
+        return n + rec_sum(n - 1)
+
+
 if __name__ == "__main__":
     print("1~10까지 합 : ", sum_a(10))
     print("1~10까지 합 : ", sum_a(100))
     print()
     print("1~10까지 합 : ", sum_a2(10))
     print("1~10까지 합 : ", sum_a2(100))
+    print()
+    print("1~10까지 합 : ", rec_sum(10))
+    print("1~10까지 합 : ", rec_sum(100))
