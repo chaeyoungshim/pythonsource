@@ -18,4 +18,8 @@ element.send_keys("아이폰")
 element.send_keys(Keys.ENTER)
 
 time.sleep(3)
+
+# 뒤로가기
+browser.back()
+
 browser.quit()
